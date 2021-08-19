@@ -1,0 +1,8 @@
+<main>
+  <div>
+    <button type="button" (click)="createPost()">Add Post</button>
+  </div>
+  <div *ngFor="let post of postsService.state$ | async">
+    {{post.data}}
+  </div>
+</main>
